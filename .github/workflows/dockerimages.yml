@@ -4,13 +4,13 @@ on:
 #  schedule:
 #    - cron: '44 12 * * *'
   push:
-    branches: [ main ]
+    branches: [ master ]
     tags:
       - v*
   workflow_dispatch:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
 env:
   BUILDX_NO_DEFAULT_ATTESTATIONS: 1
